@@ -2,3 +2,193 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.data-set-parent {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.data-set-second {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.data-set {
+  padding: 20px;
+  -webkit-box-shadow: -1px 8px 11px -5px rgba(112, 112, 112, 0.6);
+  -moz-box-shadow: -1px 8px 11px -5px rgba(112, 112, 112, 0.6);
+  box-shadow: -1px 8px 11px -5px rgba(112, 112, 112, 0.6);
+  margin-bottom: 10px;
+  width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.data-set svg {
+  width: 45px;
+  display: block;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+.data-set svg {
+  color: #130a3a;
+}
+
+.real-date {
+  height: 50px;
+  color: #696969;
+  font-size: 15px;
+}
+
+.data-set {
+  font-size: 20px;
+  padding-top: 35px;
+  color: #095797;
+  font-weight: bold;
+}
+
+.data-set b {
+  margin-bottom: 5px;
+  font-size: 17px;
+  color: #000;
+  display: block;
+}
+
+.col {
+  width: 100%;
+}
+
+.firstcol.col form * {
+  display: block;
+}
+
+.firstcol.col form input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.firstcol.col form textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 120px;
+}
+
+.firstcol.col form button {
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 24px;
+  background: #0957a4;
+  border: 0;
+  color: #fff;
+  width: 100px;
+}
+
+.notepad {
+  text-align: left;
+  background: #f1f1f1;
+  padding: 15px;
+  position: relative;
+  margin-bottom: 15px;
+  border: 5px dotted #fff;
+}
+
+.notepad h3 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 0;
+  font-size: 16px;
+  color: #0957a4;
+}
+
+.notepad span {
+  font-size: 14px;
+}
+
+.checklisttodo {
+  background: #c0e0ff;
+  text-align: center;
+  padding: 10px;
+  border: 3px solid #7fbdf9;
+  padding-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+
+.App.appparent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.appcol.firstcol {
+  width: 60%;
+}
+
+.appcol.secondcol {
+  width: 40%;
+}
+
+.firstcol.col {
+  width: 100%;
+}
+
+.appcol.firstcol h1 {
+  margin-bottom: 5px;
+}
+
+.notepad button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 0;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 150%;
+  color: #fff;
+  background: #0957a4;
+  width: 23px;
+}
+
+.notepad button:hover {
+  background: #130a3a;
+  cursor: pointer;
+}
+
+.appcol.secondcol h3 {
+  text-align: left;
+}
+
+.secondcol.col {
+  width: 85%;
+}
+
+.frametodo {
+  max-height: 250px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-bottom: 15px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0e0ff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7fbdf9;
+}
