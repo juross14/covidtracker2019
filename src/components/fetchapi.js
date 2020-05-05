@@ -1,15 +1,15 @@
 import React from 'react'
-import Moment from 'react-moment'
 
 export default class Featchapi extends React.Component {
   state = {
     loading: true,
+    country: 'ph',
     covid: null
   }
-
   async componentDidMount() {
-    const url =
-      'https://corona-virus-stats.herokuapp.com/api/v1/cases/countries-search?search=ph'
+    const url = `https://corona-virus-stats.herokuapp.com/api/v1/cases/countries-search?search=${
+      this.state.country
+    }`
     const response = await fetch(url)
     const data = await response.json()
     console.log(data.data.rows[0])
@@ -25,13 +25,29 @@ export default class Featchapi extends React.Component {
     if (!this.state.covid) {
       return <div>aint data nigga</div>
     }
-    const dateToFormat = new Date()
-
+    console.log(this.state.country)
     return (
       <section>
-        <div className="real-date">
-          As of <Moment date={dateToFormat} />
-        </div>
+        <form className="dropdownsea">
+          <label>Select SEA country:</label>
+          <select
+            id="sea"
+            name="sealist"
+            form="seaform"
+            value={this.state.country}
+            onChange={e => this.setState({ country: e.target.value })}
+          >
+            <option value="br"> Brunei</option>
+            <option value="kh"> Cambodia</option>
+            <option value="id"> Indonesia</option>
+            <option value="my"> Malaysia</option>
+            <option value="mm"> Myanmar</option>
+            <option value="ph"> Philippines</option>
+            <option value="sg"> Singapore</option>
+            <option value="th"> Thailand</option>
+            <option value="vn"> Vietnam </option>
+          </select>
+        </form>
         <div className="data-set-parent">
           <div className="data-set">
             <b>

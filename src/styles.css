@@ -23,13 +23,13 @@
   -moz-box-shadow: -1px 8px 11px -5px rgba(112, 112, 112, 0.6);
   box-shadow: -1px 8px 11px -5px rgba(112, 112, 112, 0.6);
   margin-bottom: 10px;
-  width: 200px;
+  width: 105px;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .data-set svg {
-  width: 45px;
+  width: 35px;
   display: block;
   padding-bottom: 10px;
   margin: auto;
@@ -40,7 +40,6 @@
 }
 
 .real-date {
-  height: 50px;
   color: #696969;
   font-size: 15px;
 }
@@ -191,4 +190,20 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #7fbdf9;
+}
+
+.chartcovid canvas {
+  width: 80% !important;
+  height: auto !important;
+  margin: auto;
+  padding: 20px;
+  background: #00;
+  -webkit-box-shadow: -1px 8px 11px -5px rgba(112, 112, 112, 0.6);
+  -moz-box-shadow: -1px 8px 11px -5px rgba(112, 112, 112, 0.6);
+  box-shadow: -1px 8px 11px -5px rgba(112, 112, 112, 0.6);
+}
+
+form.dropdownsea {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
