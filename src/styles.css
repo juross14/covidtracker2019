@@ -218,3 +218,20 @@ form.dropdownsea {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+form.dropdownsea {
+  text-align: left;
+  max-width: 615px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+form.dropdownsea select {
+  width: 200px;
+  padding: 5px;
+  margin-left: 10px;
+  border: 1px solid #c4c4c4;
+  font-weight: bold;
+}

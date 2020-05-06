@@ -13,6 +13,7 @@ export default class todolist extends React.Component {
       //Able to retrieve the old set of object and data , previous an present
       todos: [todo, ...this.state.todos]
     })
+    localStorage.setItem('myData', JSON.stringify(this.state.todos))
     console.log(this.state.todos)
   }
 
@@ -37,6 +38,14 @@ export default class todolist extends React.Component {
     this.setState(state => ({
       todos: state.todos.filter(todo => todo.id !== id)
     }))
+    localStorage.removeItem('myData')
+  }
+
+  componentDidMount() {
+    localStorage.getItem('myData') &&
+      this.setState(state => ({
+        todos: JSON.parse(localStorage.getItem('myData'))
+      }))
   }
 
   render() {
@@ -45,7 +54,9 @@ export default class todolist extends React.Component {
         <div className="data-set-second">
           <div className="secondcol col">
             <div className="checklisttodo">
-              <p>Hello you can view your checklist here</p>
+              <p>
+                Hello you can view your checklist here and bookmark your list
+              </p>
               <strong>
                 Todos left:{' '}
                 {this.state.todos.filter(todo => !todo.complete).length}
