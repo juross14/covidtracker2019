@@ -6,7 +6,17 @@ export default class Featchapi extends React.Component {
     country: 'ph',
     covid: null
   }
-  async componentDidMount() {
+  componentDidMount() {
+    this.fetchdata()
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.country !== this.state.country) {
+      this.fetchdata()
+    }
+  }
+
+  async fetchdata() {
     const url = `https://corona-virus-stats.herokuapp.com/api/v1/cases/countries-search?search=${
       this.state.country
     }`
@@ -14,7 +24,6 @@ export default class Featchapi extends React.Component {
     const data = await response.json()
     console.log(data.data.rows[0])
     this.setState({ loading: false, covid: data.data.rows[0] })
-    //console.log(data.results[0])
   }
 
   render() {
@@ -37,15 +46,15 @@ export default class Featchapi extends React.Component {
             value={this.state.country}
             onChange={e => this.setState({ country: e.target.value })}
           >
-            <option value="br"> Brunei</option>
-            <option value="kh"> Cambodia</option>
-            <option value="id"> Indonesia</option>
-            <option value="my"> Malaysia</option>
-            <option value="mm"> Myanmar</option>
-            <option value="ph"> Philippines</option>
-            <option value="sg"> Singapore</option>
-            <option value="th"> Thailand</option>
-            <option value="vn"> Vietnam </option>
+            <option value="Philippines"> Philippines</option>
+            <option value="Vietnam"> Vietnam </option>
+            <option value="Brunei"> Brunei</option>
+            <option value="Cambodia"> Cambodia</option>
+            <option value="Indonesia"> Indonesia</option>
+            <option value="Malaysia"> Malaysia</option>
+            <option value="Myanmar"> Myanmar</option>
+            <option value="Singapore"> Singapore</option>
+            <option value="Thailand"> Thailand</option>
           </select>
         </form>
         <div className="data-set-parent">

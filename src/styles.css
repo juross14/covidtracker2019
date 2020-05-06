@@ -28,6 +28,17 @@
   margin-right: 10px;
 }
 
+.data-set {
+  font-size: 20px;
+  padding-top: 35px;
+  color: #095797;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .data-set svg {
   width: 35px;
   display: block;
