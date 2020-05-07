@@ -78,15 +78,17 @@
 }
 
 .firstcol.col form input {
-  width: 80%;
+  width: 93%;
   padding: 10px;
   margin-bottom: 10px;
+  border: 1px solid #095797;
 }
 .firstcol.col form textarea {
-  width: 80%;
+  width: 93%;
   padding: 10px;
   margin-bottom: 10px;
   height: 120px;
+  border: 1px solid #095797;
 }
 
 .firstcol.col form button {
@@ -117,7 +119,7 @@
 }
 
 .notepad span {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .checklisttodo {
@@ -275,4 +277,25 @@ form.dropdownsea select {
   color: #fff;
   border: 0;
   cursor: pointer;
+}
+
+.firstcol.col form {
+  -webkit-box-shadow: -1px 8px 11px -5px rgba(112, 112, 112, 0.6);
+  -moz-box-shadow: -1px 8px 11px -5px rgba(112, 112, 112, 0.6);
+  box-shadow: -1px 8px 11px -5px rgba(112, 112, 112, 0.6);
+  width: 80%;
+  padding: 22px;
+}
+
+.iconvirus svg {
+  width: 70px;
+  float: left;
+  padding: 20px;
+  color: #095797;
+  padding-top: 0;
+}
+
+.checklisttodo {
+  font-size: 14px;
+  text-align: left;
 }

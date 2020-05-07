@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Bar } from 'react-chartjs-2'
+import { Line } from 'react-chartjs-2'
 import axios from 'axios'
 
 const Covidchart = () => {
@@ -13,7 +13,6 @@ const Covidchart = () => {
       'Total Deaths',
       'New Recovered',
       'Total Recovered'
-      
     ]
     axios
       .get('https://api.covid19api.com/summary')
@@ -27,7 +26,6 @@ const Covidchart = () => {
           covidglobal.TotalDeaths,
           covidglobal.NewRecovered,
           covidglobal.TotalRecovered
-
         ]
         console.log(covidint)
         // for (const dataObj of res.data.Countries) {
@@ -41,9 +39,9 @@ const Covidchart = () => {
               label: 'Global Count Covid Cases',
               data: covidint,
               borderWidth: 3,
-              fill: false,
+              fill: true,
               lineTension: 0.1,
-              backgroundColor: 'rgb(15, 95, 161)',
+              backgroundColor: 'rgb(192, 224, 255)',
               borderColor: 'rgb(15, 95, 161)',
               borderCapStyle: 'butt',
               borderDash: [],
@@ -100,7 +98,7 @@ const Covidchart = () => {
   return (
     <div className="chartcovid">
       <div>
-        <Bar data={chartData} options={optiongraph} />
+        <Line data={chartData} options={optiongraph} />
       </div>
     </div>
   )
