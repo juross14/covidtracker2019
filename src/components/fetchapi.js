@@ -56,6 +56,11 @@ export default class Featchapi extends React.Component {
             <option value="Singapore"> Singapore</option>
             <option value="Thailand"> Thailand</option>
           </select>
+          <img
+            src={this.state.covid.flag}
+            alt={this.state.country}
+            className="flag-sea"
+          />
         </form>
         <div className="data-set-parent">
           <div className="data-set">
