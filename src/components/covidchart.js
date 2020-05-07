@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { Line } from 'react-chartjs-2'
+import { Line, Bar } from 'react-chartjs-2'
 import axios from 'axios'
 
 const Covidchart = () => {
   const [chartData, setChartData] = useState({})
+  const [graphver, graphset] = useState('line')
   const chart = () => {
     let covidint = []
     let covidlabel = [
@@ -95,11 +96,31 @@ const Covidchart = () => {
       ]
     }
   }
+
+  let rendergraph
+  if (graphver === 'line') {
+    rendergraph = <Line data={chartData} options={optiongraph} />
+  } else {
+    rendergraph = <Bar data={chartData} options={optiongraph} />
+  }
+
+  console.log(graphver)
   return (
     <div className="chartcovid">
-      <div>
-        <Line data={chartData} options={optiongraph} />
-      </div>
+      <form className="dropdownsea">
+        <label>Select Type Visualization:</label>
+        <select
+          id="sea"
+          name="sealist"
+          form="seaform"
+          value={graphver}
+          onChange={e => graphset(e.target.value)}
+        >
+          <option value="bar"> Bar</option>
+          <option value="line"> Line </option>
+        </select>
+      </form>
+      <div>{rendergraph}</div>
     </div>
   )
 }

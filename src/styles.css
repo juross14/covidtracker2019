@@ -364,3 +364,26 @@ form.dropdownsea select {
 .data-set:nth-child(8) {
   border-bottom: 5px solid #3e053a;
 }
+
+@media (max-width: 710px) {
+  .appcol.firstcol {
+    width: 100%;
+  }
+  .secondcol.col {
+    width: 100%;
+  }
+
+  .firstcol.col form {
+    margin: auto;
+  }
+
+  .appcol.secondcol {
+    width: 100%;
+  }
+}
+
+.localset button:hover {
+  background: #095797;
+  color: #fff;
+  cursor: pointer;
+}

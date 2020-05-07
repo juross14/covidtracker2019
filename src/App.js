@@ -6,6 +6,7 @@ import Covidchart from './components/covidchart'
 import Moment from 'react-moment'
 export default function App() {
   const dateToFormat = new Date()
+
   return (
     <div className="App appparent">
       <div className="appcol firstcol">
