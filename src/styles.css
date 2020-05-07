@@ -179,7 +179,7 @@
 }
 
 .frametodo {
-  max-height: 250px;
+  max-height: 300px;
   overflow: hidden;
   overflow-y: scroll;
   margin-bottom: 15px;
@@ -234,4 +234,45 @@ form.dropdownsea select {
   margin-left: 10px;
   border: 1px solid #c4c4c4;
   font-weight: bold;
+}
+
+.localset {
+  text-align: right;
+  margin-bottom: 10px;
+  border-bottom: 1px dotted #7fbdf9;
+}
+
+.localset button {
+  margin-left: 5px;
+  padding: 8px;
+  background: transparent;
+  border-top: 1px solid #7fbdf9;
+  border-left: 1px solid #7fbdf9;
+  border-right: 1px solid #7fbdf9;
+  border-bottom: 0px;
+  color: #0957a4;
+}
+
+.localset svg {
+  width: 12px;
+  position: relative;
+  top: 1px;
+}
+
+.localset > button:nth-child(1) > svg {
+  width: 10px;
+}
+
+.localset button:nth-child(1):hover {
+  background: #119906;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.localset button:nth-child(2):hover {
+  background: #d81111;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
 }
