@@ -104,11 +104,11 @@
 
 .notepad {
   text-align: left;
-  background: #f1f1f1;
+  background: #f9f9f9;
   padding: 15px;
   position: relative;
   margin-bottom: 15px;
-  border: 5px dotted #fff;
+  border: 1px solid #e7e7e7;
 }
 
 .notepad h3 {
@@ -189,17 +189,17 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #c0e0ff;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
