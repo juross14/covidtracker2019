@@ -56,10 +56,11 @@
 }
 
 .data-set {
-  font-size: 20px;
+  font-size: 17px;
   padding-top: 35px;
   color: #095797;
-  font-weight: bold;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .data-set b {
@@ -330,4 +331,36 @@ form.dropdownsea select {
 
 .data-set:nth-child(8) svg {
   color: #3e053a;
+}
+
+.data-set:nth-child(1) {
+  border-bottom: 5px solid #108e00;
+}
+
+.data-set:nth-child(2) {
+  border-bottom: 5px solid #2861ff;
+}
+
+.data-set:nth-child(3) {
+  border-bottom: 5px solid #0e3091;
+}
+
+.data-set:nth-child(4) {
+  border-bottom: 5px solid #ab4b07;
+}
+
+.data-set:nth-child(5) {
+  border-bottom: 5px solid #b80202;
+}
+
+.data-set:nth-child(6) {
+  border-bottom: 5px solid #44a69d;
+}
+
+.data-set:nth-child(7) {
+  border-bottom: 5px solid #b6a913;
+}
+
+.data-set:nth-child(8) {
+  border-bottom: 5px solid #3e053a;
 }
