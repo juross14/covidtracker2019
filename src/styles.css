@@ -299,3 +299,35 @@ form.dropdownsea select {
   font-size: 14px;
   text-align: left;
 }
+
+.data-set:nth-child(1) svg {
+  color: #108e00;
+}
+
+.data-set:nth-child(2) svg {
+  color: #2861ff;
+}
+
+.data-set:nth-child(3) svg {
+  color: #0e3091;
+}
+
+.data-set:nth-child(4) svg {
+  color: #ab4b07;
+}
+
+.data-set:nth-child(5) svg {
+  color: #b80202;
+}
+
+.data-set:nth-child(6) svg {
+  color: #05887c;
+}
+
+.data-set:nth-child(7) svg {
+  color: #b6a913;
+}
+
+.data-set:nth-child(8) svg {
+  color: #3e053a;
+}
