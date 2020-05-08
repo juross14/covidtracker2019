@@ -26,11 +26,15 @@ export default class todolist extends React.Component {
   }
 
   removelocal = () => {
-    localStorage.removeItem('myData')
-    this.setState(state => ({
-      todos: []
-    }))
-    window.confirm('Remove Local Storage')
+    let confirmbtn = window.confirm('Remove Local Storage')
+    if (confirmbtn === true) {
+      localStorage.removeItem('myData')
+      this.setState(state => ({
+        todos: []
+      }))
+    } else {
+      return null
+    }
   }
 
   toggleComplete = id => {

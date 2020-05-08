@@ -34,7 +34,6 @@ export default class Featchapi extends React.Component {
     if (!this.state.covid) {
       return <div>aint data nigga</div>
     }
-    console.log(this.state.country)
     return (
       <section>
         <form className="dropdownsea">
