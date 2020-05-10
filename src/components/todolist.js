@@ -44,14 +44,17 @@ export default class todolist extends React.Component {
           // suppose to update
           return {
             // similar each array map updated
-            ...todo,
-            complete: !todo.complete
+            id: todo.id,
+            complete: !todo.complete,
+            TitleTodo: todo.TitleTodo,
+            TitleComments: todo.TitleComments
           }
         } else {
           return todo
         }
       })
     }))
+    console.log(this.state.todos)
   }
 
   handleDeleteTodo = id => {

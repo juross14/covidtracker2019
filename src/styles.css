@@ -132,6 +132,11 @@
   font-size: 16px;
   margin-bottom: 20px;
   line-height: 20px;
+  height: 88px;
+}
+
+.checklisttodo strong {
+  display: block;
 }
 
 .App.appparent {
@@ -394,4 +399,68 @@ img.flag-sea {
   position: relative;
   top: 8px;
   left: 10px;
+}
+
+.moreinfo button {
+  position: relative;
+  font-size: 12px;
+  width: 50px;
+  height: 30px;
+  border-radius: 20px;
+  margin: 10px;
+  background: #424242;
+}
+
+.moreinfo form * {
+  display: block;
+}
+
+.moreinfo form {
+  width: 90%;
+  padding-top: 10px;
+  border: 1px solid #c0bdbd;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.moreinfo form input {
+  background: #efefef !important;
+  border-bottom: 1px solid #f9f9f9 !important;
+  border: 0;
+  padding: 10px;
+  width: 90%;
+}
+
+.moreinfo form textarea {
+  background: #efefef !important;
+  border-bottom: 1px solid #f9f9f9 !important;
+  border: 0;
+  padding: 10px;
+  width: 90%;
+  margin-top: 13px;
+}
+
+button.editbtn {
+  background: #f9f9f9;
+  color: #000;
+  width: 45px;
+  text-align: left;
+  border-right: 3px solid #a5a5a5;
+  border-radius: 0;
+  position: absolute;
+  height: 20px;
+  top: 2px;
+  right: 30px;
+}
+
+button.editbtn:hover {
+  background: #a5a3a3;
+  color: #fff;
+}
+
+button.savebtn {
+  font-size: 11px;
+  width: 60px;
+  background: #09a1e7;
+  margin-top: 2px;
 }
